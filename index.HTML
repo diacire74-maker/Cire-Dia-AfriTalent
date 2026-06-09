@@ -1,209 +1,408 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebDev Academy - Formation Web Professionnelle</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="http Bs://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
+    <title>AfriTalent - Trouvez les meilleurs freelances africains</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <span class="logo-icon"></span>
-                    <span class="logo-text">WebDev Academy</span>
-                </div>
-                <nav class="nav">
-                    <a href="#accueil" class="nav-link">Accueil</a>
-                    <a href="#formations" class="nav-link">Formations</a>
-                    <a href="#apropos" class="nav-link">À propos</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <a href="#" class="btn">S'inscrire</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <!-- ===================== NAVBAR ===================== -->
 
-    <!-- HERO -->
-    <section id="accueil" class="hero">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Devenez un Développeur Web Pro</h1>
-                    <p class="hero-subtitle">Maîtrisez les technologies web actuelles avec nos experts. Des formations pratiques, accessibles et reconnues par l'industrie.</p>
-                    <div class="hero-buttons">
-                        <button class="btn">S'inscrire maintenant</button>
-                        <a href="#formations" class="btn btn-secondaire">Voir les formations</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="https://private-us-east-1.manuscdn.com/sessionFile/vGHNtGjRNSoPpWjSs7V5kO/sandbox/Nn3IBTqhSGBiFNBHjqAyme-img-1_1771836429000_na1fn_aGVyby13ZWJkZXY.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdkdITnRHalJOU29QcFdqU3M3VjVrTy9zYW5kYm94L05uM0lCVHFoU0dCaUZOQkhqcUF5bWUtaW1nLTFfMTc3MTgzNjQyOTAwMF9uYTFmbl9hR1Z5YnkxM1pXSmtaWFkucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=CSoXXLubS6SZUryhrjTbKdGuKx6gO-gcKSOIT5e-jAmGt8TjUh0oLmJPoQzuXnzsv75Sk6GxcMEyCnpk003iLqCeAN~2q5ZH7BVFG46TieSR6K3EWh3X08L-Cj~kOdTvTiUejEEyDEOsStHmWbtz4GieOV~vrbPdiIS4DXx5Em-EVbwlYh9hLUAQksd-S9a8hoXdXOxb9XC7g-52q7qxycTNFx322q9O-M9qtfFWIcqh1wbmXpIQCnkG0JkBiGID0aXIVr2c31cZqCN9LbK4i~yRdObaecmVlMrhyNnbi7AYZ01wuxV59IgjBg9qMkMjA5oeySNHkZcjQzX331L~BA__" alt="Développeurs collaborant" class="hero-img">
-                </div>
+
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-globe-africa"></i>
+                AfriTalent
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Freelances</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tarifs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">À propos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+                <a href="#" class="btn btn-warning ms-lg-3">
+                    Rejoindre AfriTalent
+                </a>
+
             </div>
         </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+
+    <section class="hero text-white d-flex align-items-center">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h1 class="display-3 fw-bold">
+                        Trouvez les meilleurs talents freelances d'Afrique
+                    </h1>
+
+                    <h2 class="lead my-4">
+                        Développement Web, Design, Marketing Digital,
+                        Data & IA, DevOps et bien plus encore.
+                    </h2>
+
+                    <a href="#" class="btn btn-primary btn-lg me-2">
+                        Je suis Freelance
+                    </a>
+
+                    <a href="#" class="btn btn-outline-light btn-lg">
+                        Je cherche un Freelance
+                    </a>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <img src="images/freelance.png"
+                        alt="Freelance"
+                        class="img-fluid hero-image">
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <!-- FORMATIONS -->
-    <section id="formations" class="formations">
+    <!-- ===================== STATISTIQUES ===================== -->
+
+    <section class="py-5 bg-light">
+
         <div class="container">
-            <div class="section-header">
-                <h2>Nos Parcours de Formation</h2>
-                <p>Choisissez le parcours adapté à votre niveau et vos objectifs</p>
-            </div>
 
-            <div class="formations-grid">
+            <div class="row text-center">
 
-                <article class="formation-card">
-                    <div class="formation-icon">
-                        <img src="https://private-us-east-1.manuscdn.com/sessionFile/vGHNtGjRNSoPpWjSs7V5kO/sandbox/Nn3IBTqhSGBiFNBHjqAyme-img-2_1771836420000_na1fn_Zm9ybWF0aW9uLWh0bWwtY3Nz.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdkdITnRHalJOU29QcFdqU3M3VjVrTy9zYW5kYm94L05uM0lCVHFoU0dCaUZOQkhqcUF5bWUtaW1nLTJfMTc3MTgzNjQyMDAwMF9uYTFmbl9abTl5YldGMGFXOXVMV2gwYld3dFkzTnoucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=ulwOmSt9UBEYUp4vjzK6Br~JBlsN1IYmjbdwcrkIPwHwiAJwKG5W74IVDs8d7MpaaOy-IWmLcht0rP5W9KJax4r2e85JWrCU-rPGFiL~T~iKIVEVLlg1H1w-pPRYvawl3YETFEtDik1CFj5n6Li9atj-mQwA-flZ~1co5WUfc7oASj5-kAnNk4iMj0TzOSDOBZVkL3Bv5Aahx8IrQIxR5IC6fvWX7Q5MJqwHEez7w3sde0yab~aIPEAC53IwAucnFb9i5rAAGs~Kx3HwNk2-hGhGTRNVvI4ISdJHZWcoBqui-JHkFVeab8k3VtmhUSOpBcsJ-Xgd7Y-91A-n7IDJPQ__" alt="HTML CSS" class="formation-img">
-                    </div>
-                    <div class="formation-body">
-                        <h3 class="formation-title">HTML & CSS — Les Bases du Web</h3>
-                        <p class="formation-description">Apprenez les fondamentaux de la structure et du style web. Créez vos premiers sites responsifs.</p>
-                        <div class="formation-footer">
-                            <p class="formation-duration"><i class="fa-regular fa-alarm-clock"></i> 4 semaines</p>
-                            <button class="formation-btn">En savoir plus</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="formation-card">
-                    <div class="formation-icon">
-                        <img src="https://private-us-east-1.manuscdn.com/sessionFile/vGHNtGjRNSoPpWjSs7V5kO/sandbox/Nn3IBTqhSGBiFNBHjqAyme-img-3_1771836418000_na1fn_Zm9ybWF0aW9uLWphdmFzY3JpcHQ.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdkdITnRHalJOU29QcFdqU3M3VjVrTy9zYW5kYm94L05uM0lCVHFoU0dCaUZOQkhqcUF5bWUtaW1nLTNfMTc3MTgzNjQxODAwMF9uYTFmbl9abTl5YldGMGFXOXVMV3BoZG1GelkzSnBjSFEucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=oXUJXGLcOrpVk41dT7CsKqlkjbnxq5S0YzEjSwk8yKDnMcQuos0dipLwQPntny7sHmqPGeaLWxwvgwucpo0bM~2YxKh~TvMyZHMU1S1cNUWy~zxywhjdS2GgKq2k2Jkf4W-eU7SWJzw8T-UZrkgYs1ycNHf1cWPufrA0sWnW-d7at~J4rMAhbgvIcJXI8PzklAa4SYlUNQiQSkngmY3IGzgo68lOIeHGqKtS-2VFNnX2NgoKW4enAQoLivgCDWooHxvC1~HsbJdMDieLBr5QhffzMdSqDJ0O0J8nyVks58796pHxi1nRs8DcYAyrsTmhCsFr96gNKvswoDi8ujXHXQ__" alt="JavaScript" class="formation-img">
-                    </div>
-                    <div class="formation-body">
-                        <h3 class="formation-title">JavaScript — L'Interactivité Dynamique</h3>
-                        <p class="formation-description">Maîtrisez le langage de programmation web. Créez des applications interactives et dynamiques.</p>
-                        <div class="formation-footer">
-                            <p class="formation-duration"><i class="fa-regular fa-alarm-clock"></i> 6 semaines</p>
-                            <button class="formation-btn">En savoir plus</button>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="formation-card">
-                    <div class="formation-icon">
-                        <img src="https://private-us-east-1.manuscdn.com/sessionFile/vGHNtGjRNSoPpWjSs7V5kO/sandbox/Nn3IBTqhSGBiFNBHjqAyme-img-4_1771836423000_na1fn_Zm9ybWF0aW9uLWZ1bGxzdGFjaw.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvdkdITnRHalJOU29QcFdqU3M3VjVrTy9zYW5kYm94L05uM0lCVHFoU0dCaUZOQkhqcUF5bWUtaW1nLTRfMTc3MTgzNjQyMzAwMF9uYTFmbl9abTl5YldGMGFXOXVMV1oxYkd4emRHRmphdy5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Yd2hOLRCqEMnp6zhFQf-u7EyHBhBxrVaxet7eCqVr4468VkohiwJMmZMVLAvP0UT9UtOV6NZ~3gb4abJMRu7ZIiKr6oqeqXoyl2K3FQEX5~XwEXMZnaVuPnpEQjKAnObkVdKur8Niy6LaBozs1kYujF~rh15tKGbhcuzbLmFg-XQwOxOGMLjtL5NSpm66~Q1J-qbcymE0cUCWR9ODjJaWO3ON-JazoHYCK8YvNGdIJNEcXtdCiaKk8xc~EopC8NH5OFcztjSKpmoX6i18jdoqjK2-GIEhvFI0qOO6OooR0wuoU3pRGT93ywVrIdJsfsHTDjbuuQJ5Q2gcQmPw0CM~w__" alt="Full-Stack" class="formation-img">
-                    </div>
-                    <div class="formation-body">
-                        <h3 class="formation-title">Développement Full Stack</h3>
-                        <p class="formation-description">Devenez développeur complet. Frontend, backend, base de données et déploiement.</p>
-                        <div class="formation-footer">
-                            <p class="formation-duration"><i class="fa-regular fa-alarm-clock"></i> 12 semaines</p>
-                            <button class="formation-btn">En savoir plus</button>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- AVANTAGES -->
-    <section id="apropos" class="avantages">
-        <div class="container">
-            <div class="section-header">
-                <h2>Pourquoi Choisir WebDev Academy ?</h2>
-            </div>
-            <div class="avantages-grid">
-                <article class="avantage-card">
-                    <div class="avantage-icon"><i class="fa-solid fa-bullseye"></i></div>
-                    <h3 class="avantage-title">Apprentissage Pratique</h3>
-                    <p class="avantage-description">Projets concrets et mises en situation réelles pour une expérience immédiate.</p>
-                </article>
-                <article class="avantage-card">
-                    <div class="avantage-icon"><i class="fa-solid fa-user-tie"></i></div>
-                    <h3 class="avantage-title">Mentors Experts</h3>
-                    <p class="avantage-description">Apprenez auprès de développeurs expérimentés en activité professionnelle.</p>
-                </article>
-                <article class="avantage-card">
-                    <div class="avantage-icon"><i class="fa-solid fa-users"></i></div>
-                    <h3 class="avantage-title">Communauté Active</h3>
-                    <p class="avantage-description">Rejoignez un réseau d'apprenants et de professionnels du numérique.</p>
-                </article>
-                <article class="avantage-card">
-                    <div class="avantage-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3 class="avantage-title">Certificats Reconnus</h3>
-                    <p class="avantage-description">Obtenez des certifications reconnues par les recruteurs du secteur.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- TÉMOIGNAGES -->
-    <section class="temoignages">
-        <div class="container">
-            <div class="section-header">
-                <h2>Ce Que Disent Nos Étudiants</h2>
-            </div>
-            <div class="temoignages-grid">
-                <article class="temoignage-card">
-                    <p class="temoignage-text">« WebDev Academy m'a permis de changer de carrière. Les cours sont clairs, les projets sont motivants et l'équipe est toujours disponible pour aider. »</p>
-                    <div class="temoignage-header">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%232563eb'/%3E%3Ctext x='50' y='62' font-size='48' text-anchor='middle' fill='white' font-family='Arial'%3EC%3C/text%3E%3C/svg%3E" alt="Claire G." class="temoignage-avatar">
-                        <div class="temoignage-info">
-                            <h4 class="temoignage-name">Claire G.</h4>
-                            <p class="temoignage-role">Développeuse Frontend</p>
-                        </div>
-                    </div>
-                    <div class="temoignage-rating">⭐⭐⭐⭐⭐</div>
-                </article>
-                <article class="temoignage-card">
-                    <p class="temoignage-text">« Les projets pratiques m'ont vraiment préparé au monde du travail. J'ai trouvé un emploi 2 mois après la fin de la formation. »</p>
-                    <div class="temoignage-header">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23111827'/%3E%3Ctext x='50' y='62' font-size='48' text-anchor='middle' fill='white' font-family='Arial'%3ET%3C/text%3E%3C/svg%3E" alt="Thomas L." class="temoignage-avatar">
-                        <div class="temoignage-info">
-                            <h4 class="temoignage-name">Thomas L.</h4>
-                            <p class="temoignage-role">Développeur Full Stack</p>
-                        </div>
-                    </div>
-                    <div class="temoignage-rating">⭐⭐⭐⭐⭐</div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer id="contact" class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <p class="footer-logo">WebDev Academy</p>
-                    <p class="footer-desc">L'académie de référence pour la formation au développement web professionnel.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    </div>
+                <div class="col-md-4">
+                    <h2 class="counter" data-target="2500">0</h2>
+                    <p>Freelances</p>
                 </div>
-                <div>
-                    <h3 class="footer-title">Contact</h3>
-                    <p class="footer-info"><i class="fa-solid fa-envelope"></i> <a href="mailto:contact@webdevacademy.fr">contact@webdevacademy.fr</a></p>
-                    <p class="footer-info"><i class="fa-solid fa-phone"></i> <a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
-                    <p class="footer-info"><i class="fa-solid fa-location-dot"></i> 123 Rue de la Tech, 75000 Paris</p>
+
+                <div class="col-md-4">
+                    <h2 class="counter" data-target="800">0</h2>
+                    <p>Entreprises</p>
                 </div>
-                <div>
-                    <h3 class="footer-title">Navigation</h3>
-                    <ul class="footer-links">
-                        <li><a href="#accueil">Accueil</a></li>
-                        <li><a href="#formations">Formations</a></li>
-                        <li><a href="#apropos">À propos</a></li>
-                        <li><a href="#contact">Contact</a></li>
+
+                <div class="col-md-4">
+                    <h2 class="counter" data-target="12000">0</h2>
+                    <p>Missions réalisées</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== COMMENT ÇA MARCHE ===================== -->
+
+    <section class="container py-5">
+
+        <div class="text-center mb-5">
+            <h2>Comment ça marche ?</h2>
+        </div>
+
+        <div class="bento-grid">
+
+            <div class="bento-card large">
+                <i class="bi bi-person-plus-fill"></i>
+                <h4>1. Créez votre profil</h4>
+                <p>Inscrivez-vous gratuitement et présentez vos compétences.</p>
+            </div>
+
+            <div class="bento-card">
+                <i class="bi bi-search"></i>
+                <h4>2. Trouvez une mission</h4>
+                <p>Découvrez des opportunités adaptées à votre profil.</p>
+            </div>
+
+            <div class="bento-card">
+                <i class="bi bi-people-fill"></i>
+                <h4>3. Collaborez</h4>
+                <p>Travaillez avec des entreprises partout en Afrique.</p>
+            </div>
+
+            <div class="bento-card wide">
+                <i class="bi bi-credit-card-fill"></i>
+                <h4>4. Recevez vos paiements</h4>
+                <p>Paiements sécurisés et rapides pour toutes vos missions.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== CATÉGORIES ===================== -->
+
+    <section class="container py-5">
+
+        <div class="text-center mb-5">
+            <h2>Catégories de services</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <i class="bi bi-code-slash"></i>
+                    <h4>Développement Web</h4>
+                    <p>500 freelances disponibles</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <i class="bi bi-palette-fill"></i>
+                    <h4>Design UI/UX</h4>
+                    <p>320 freelances disponibles</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <i class="bi bi-megaphone-fill"></i>
+                    <h4>Marketing Digital</h4>
+                    <p>410 freelances disponibles</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <i class="bi bi-cpu-fill"></i>
+                    <h4>Data & IA</h4>
+                    <p>280 freelances disponibles</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <i class="bi bi-pencil-square"></i>
+                    <h4>Rédaction Tech</h4>
+                    <p>150 freelances disponibles</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="service-card text-center">
+                    <i class="bi bi-cloud-fill"></i>
+                    <h4>DevOps & Cloud</h4>
+                    <p>200 freelances disponibles</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== TÉMOIGNAGES ===================== -->
+
+    <section class="bg-light py-5">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">Témoignages</h2>
+
+            <div id="carouselTemoignages" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active text-center">
+
+                        <img src="https://randomuser.me/api/portraits/men/11.jpg"
+                            class="rounded-circle mb-3"
+                            width="100">
+
+                        <h4>Mamadou Ndiaye</h4>
+                        <p>Freelance Web</p>
+
+                        <p>
+                            "Grâce à AfriTalent, j'ai trouvé plusieurs clients
+                            en quelques semaines."
+                        </p>
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <div class="carousel-item text-center">
+
+                        <img src="https://randomuser.me/api/portraits/women/22.jpg"
+                            class="rounded-circle mb-3"
+                            width="100">
+
+                        <h4>Aminata Diop</h4>
+                        <p>Entreprise</p>
+
+                        <p>
+                            "Une plateforme simple et efficace pour recruter
+                            rapidement."
+                        </p>
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                    <div class="carousel-item text-center">
+
+                        <img src="https://randomuser.me/api/portraits/men/33.jpg"
+                            class="rounded-circle mb-3"
+                            width="100">
+
+                        <h4>Ibrahima Fall</h4>
+                        <p>Développeur Freelance</p>
+
+                        <p>
+                            "Les missions sont variées et les paiements sécurisés."
+                        </p>
+
+                        ⭐⭐⭐⭐⭐
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+
+    <section class="cta-section text-center text-white">
+
+        <div class="container">
+
+            <h2 class="mb-4">
+                Prêt à développer votre activité ?
+            </h2>
+
+            <a href="#" class="btn btn-warning btn-lg">
+                Créer mon compte gratuitement
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+
+    <footer class="bg-dark text-white pt-5">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h4>AfriTalent</h4>
+                    <p>
+                        Plateforme qui connecte les meilleurs freelances
+                        africains aux entreprises.
+                    </p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Liens utiles</h5>
+                    <ul class="list-unstyled">
+                        <li>Accueil</li>
+                        <li>Freelances</li>
+                        <li>Tarifs</li>
                     </ul>
                 </div>
+
+                <div class="col-md-3">
+                    <h5>Ressources</h5>
+                    <ul class="list-unstyled">
+                        <li>Blog</li>
+                        <li>FAQ</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>contact@afritalent.com</p>
+                    <p>+221 77 000 00 00</p>
+
+                    <div class="fs-4">
+                        <i class="bi bi-facebook me-2"></i>
+                        <i class="bi bi-instagram me-2"></i>
+                        <i class="bi bi-linkedin me-2"></i>
+                        <i class="bi bi-twitter-x"></i>
+                    </div>
+                </div>
+
             </div>
-            <div class="footer-bottom">
-                <p>© 2025 WebDev Academy. Tous droits réservés.</p>
+
+            <hr>
+
+            <div class="text-center">
+                © <span id="year"></span> AfriTalent - Tous droits réservés.
             </div>
+
         </div>
+
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script personnel -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
