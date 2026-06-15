@@ -7,3 +7,15 @@ window.addEventListener("scroll", function () {
         navbar.classList.remove("scrolled");
     }
 });
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(section => {
+        const position = section.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+
+        if (position < screenPosition) {
+            section.classList.add("section-show");
+        }
+    });
+});
